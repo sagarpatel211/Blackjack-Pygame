@@ -16,11 +16,9 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 
 ## Installation
 * Make sure all the dependencies are installed
-
 * Download the files
   * Option 1: 🍴 Fork this repository!
   * Option 2: 🧪 Clone the repository to your local machine using https://github.com/sagarpatel211/ICS3U1-Project.git!
-
 * Run main.py in Python 3.7.4 or in another code editor to run the program
 
 
