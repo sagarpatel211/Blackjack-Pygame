@@ -23,7 +23,10 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 
 
 ## Contributors
-* Sagar Patel: https://github.com/sagarpatel211
+| <a href="https://github.com/sagarpatel211" target="_blank">**Sagar Patel**</a> |
+| :---: |
+| [![Sagar Patel](https://avatars1.githubusercontent.com/u/34544263?s=200)](https://github.com/sagarpatel211)    |
+| <a href="https://github.com/sagarpatel211" target="_blank">`github.com/sagarpatel211`</a> |
 
 
 ## Contact
