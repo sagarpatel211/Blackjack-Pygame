@@ -7,18 +7,18 @@ import pygame,os,sys,random,time                                                
 sys.setrecursionlimit(100000)                                                                           #Sets recursion limit so game doesn't crash         #
 os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0,0)                                                    #Places pygame window in top left corner            #
 pygame.init()                                                                                           #Required for all Pygame packages to be active      #
-#pygame.mixer.pre_init()                                                                                 #Required for Pygame Music                          #
-#pygame.mixer.init()                                                                                     #Required for Pygame Music                          #
+#pygame.mixer.pre_init()                                                                                #Required for Pygame Music                          #
+#pygame.mixer.init()                                                                                    #Required for Pygame Music                          #
 screen = pygame.display.set_mode((600, 800), pygame.NOFRAME)                                            #sets the screen size of the game                   #
 #--------------------------------- FONTS + IMAGES + TIME + MOUSE + WINDOW ICON -------------------------#---------------------------------------------------#
-fontsize1 = pygame.font.Font('American Captain.ttf', 150)                                     #imports fonts and different sizes                  #
-fontsize2 = pygame.font.Font('American Captain.ttf', 50)                                      #imports fonts and different sizes                  #
-fontsize3 = pygame.font.Font('American Captain.ttf', 100)                                     #imports fonts and different sizes                  #
-fontsize4 = pygame.font.Font('American Captain.ttf', 130)                                     #imports fonts and different sizes                  #
-fontsize5 = pygame.font.Font('American Captain.ttf', 70)                                     #imports fonts and different sizes                  #
-fontsize6 = pygame.font.Font('American Captain.ttf', 95)                                      #imports fonts and different sizes                  #
-fontsize200 = pygame.font.Font('American Captain.ttf', 30)                                    #imports fonts and different sizes                  #
-fontsize300 = pygame.font.Font('American Captain.ttf', 37)                                    #imports fonts and different sizes                  #
+fontsize1 = pygame.font.Font('American Captain.ttf', 150)                                               #imports fonts and different sizes                  #
+fontsize2 = pygame.font.Font('American Captain.ttf', 50)                                                #imports fonts and different sizes                  #
+fontsize3 = pygame.font.Font('American Captain.ttf', 100)                                               #imports fonts and different sizes                  #
+fontsize4 = pygame.font.Font('American Captain.ttf', 130)                                               #imports fonts and different sizes                  #
+fontsize5 = pygame.font.Font('American Captain.ttf', 70)                                                #imports fonts and different sizes                  #
+fontsize6 = pygame.font.Font('American Captain.ttf', 95)                                                #imports fonts and different sizes                  #
+fontsize200 = pygame.font.Font('American Captain.ttf', 30)                                              #imports fonts and different sizes                  #
+fontsize300 = pygame.font.Font('American Captain.ttf', 37)                                              #imports fonts and different sizes                  #
 icon1 = pygame.image.load('blackjackicon.png')                                                          #imports image for game                             #
 icon2 = pygame.image.load('cardmenusuits.png')                                                          #imports image for game                             #
 icon3 = pygame.image.load('mousecursor.png')                                                            #imports image for game                             #
@@ -27,12 +27,12 @@ pygame.mouse.set_visible(False)                                                 
 pygame.display.set_icon(icon1)                                                                          #This makes the icon of the game                    #
 pygame.display.set_caption('BlackJack - Sagar')                                                         #Changes the name of game                           #
 clock = pygame.time.Clock()                                                                             #This sets the clock of the game for refresh-rate   #
-#buttonSound = pygame.mixer.Sound('Button.wav')                                                          #Imports sound for button                           #
-#winSound = pygame.mixer.Sound('Congrats.wav')                                                           #Imports sound for win screen                       #
-#loseSound = pygame.mixer.Sound('Loser.wav')                                                             #Imports sound for lose screen                      #
-#music = pygame.mixer.music.load ('BlackJack Music.mp3')                                                 #Imports sound for background music                 #
-#pygame.mixer.music.set_volume(0.8)                                                                      #Sets volume for background sound                   #
-#pygame.mixer.music.play(loops=-1)                                                                       #loops background sound forever                     #
+#buttonSound = pygame.mixer.Sound('Button.wav')                                                         #Imports sound for button                           #
+#winSound = pygame.mixer.Sound('Congrats.wav')                                                          #Imports sound for win screen                       #
+#loseSound = pygame.mixer.Sound('Loser.wav')                                                            #Imports sound for lose screen                      #
+#music = pygame.mixer.music.load ('BlackJack Music.mp3')                                                #Imports sound for background music                 #
+#pygame.mixer.music.set_volume(0.8)                                                                     #Sets volume for background sound                   #
+#pygame.mixer.music.play(loops=-1)                                                                      #loops background sound forever                     #
 #--------------------------------- CARDS ---------------------------------------------------------------#---------------------------------------------------#
 cardAC = pygame.image.load('AC.png')                                                                    #imports image for game                             #
 cardAD = pygame.image.load('AD.png')                                                                    #imports image for game                             #
@@ -118,7 +118,7 @@ def button (text,x,y,w,h,r1,g1,b1,r2,g2,b2,fontcolourr1,fontcolourg1,fontcolourb
         pygame.draw.rect(screen,(r2,g2,b2),(x,y,xhigh,ylow))                                            #This draws a button on top of the original         #
         screen.blit(font.render(text, True, (255,255,255)), [w, h])                                     #This blits the text to the screen                  #
         if clicked [0] == 1 and action != None:                                                         #If the button is clicked:                          #
-            #buttonSound.play ()                                                                         #Plays the button sound effect                      #
+            #buttonSound.play ()                                                                        #Plays the button sound effect                      #
             action ()                                                                                   #Do the action that is declared in the button       #
     else:                                                                                               #Anything else:                                     #
         pygame.draw.rect(screen,(r1,g1,b1),(x,y,xhigh,ylow))                                            #Draw the original button                           #
@@ -206,7 +206,7 @@ def winner ():                                                                  
             x = x + 1                                                                                   #Add 1 to the x value                               #
         pygame.draw.rect(screen,((26,146,75)), [0, 0, x*3, 800])                                        #Draw a rectangle [increases in size by 1px]        #
         reusesave3 ()                                                                                   #Calls reusable code for use                        #
-    #winSound.play ()                                                                                    #Plays winning sound effect                         #
+    #winSound.play ()                                                                                   #Plays winning sound effect                         #
     while winner:                                                                                       #Loop begins                                        #
         for event in pygame.event.get():                                                                #This gets the event type                           #
             if event.type == pygame.QUIT:                                                               #If the event type is quit...                       #
