@@ -30,4 +30,4 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 
 
 ## Contact
-[Email](mailto:patelsag@students.dsbn.org) | [Website](https://sagarpatel211.github.io/)
+[Email](mailto:sa24pate@uwaterloo.ca) | [Website](https://sagarpatel211.github.io/)
