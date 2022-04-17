@@ -1,6 +1,10 @@
 # ICS3U1-Project
-This project was created as part of my final assignment in *Grade 11 Introduction to Computer Science*. The project was a graphical blackjack game using Pygame in Python 3. THIS IS A TERRIBLE IMPLEMENTATION! 
+This project was created as part of my final assignment in *Grade 11 Introduction to Computer Science*. The project was a graphical blackjack game using Pygame in Python 3.
 
+## Disclaimer:
+```diff 
+- This a naive implementation and terribly styled code (eg. too many global variables, not modularized, etc.) -
+```
 
 ## Table of Contents
 * [Dependencies](#dependencies)
