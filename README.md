@@ -3,7 +3,7 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 
 ## Disclaimer:
 ```diff 
-- This a naive implementation and terribly styled code (eg. too many global variables, not modularized, etc.) -
+- This is a naive implementation and terribly styled code (eg. global variables, not modularized, etc.) -
 ```
 
 ## Table of Contents
