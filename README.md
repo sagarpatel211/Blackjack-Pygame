@@ -28,15 +28,11 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 * Run main.py in Python 3.7.4 or in another code editor to run the program
 
 ## Screenshots
-| MainPage    | Register    |
-|-------------|-------------|
-| <img src="Screenshots/SS#1.png" width="450"> | <img src="Screenshots/SS#2.png" width="450"> |
-| Login       | Stopwatch   |
-| <img src="Screenshots/SS#3.png" width="450"> | <img src="Screenshots/SS#4.png" width="450"> |
-| History     | To Do       |
-| <img src="Screenshots/SS#5.png" width="450"> | <img src="Screenshots/SS#6.png" width="450"> |
-| Dashboard   |
-| <img src="Screenshots/SS#7.png" width="450"> |
+| MainPage    | TableScreen    | PauseScreen       | ResultsScreen   |
+|-------------|-------------|-------------|-------------|
+| <img src="Screenshots/SS%231.png" width="250"> | <img src="Screenshots/SS%232.png" width="250"> | <img src="Screenshots/SS%233.png" width="250"> | <img src="Screenshots/SS%234.png" width="250"> |
+| LoseScreen   | WinScreen     | TieScreen       |
+| <img src="Screenshots/SS%235.png" width="250"> | <img src="Screenshots/SS%236.png" width="250"> | <img src="Screenshots/SS%237.png" width="250"> |
 
 ## Contributors
 | <a href="https://github.com/sagarpatel211" target="_blank">**Sagar Patel**</a> |
