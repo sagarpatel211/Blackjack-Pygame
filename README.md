@@ -4,8 +4,7 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 ## Disclaimers:
 ```diff 
 - This is a naive implementation and terribly styled code (eg. global variables, not modularized, etc.) -
-```
-```diff 
+
 - To run this program, you must copy all files from the Images directory into the directory with main.py -
 ```
 
