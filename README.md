@@ -31,13 +31,13 @@ This project was created as part of my final assignment in *Grade 11 Introductio
 ## Screenshots
 | MainPage    | Register    |
 |-------------|-------------|
-| <img src="Screenshots/SS #1.png" width="450"> | <img src="Screenshots/SS #2.png" width="450"> |
+| <img src="Screenshots/SS#1.png" width="450"> | <img src="Screenshots/SS#2.png" width="450"> |
 | Login       | Stopwatch   |
-| <img src="Screenshots/SS #3.png" width="450"> | <img src="Screenshots/SS #4.png" width="450"> |
+| <img src="Screenshots/SS#3.png" width="450"> | <img src="Screenshots/SS#4.png" width="450"> |
 | History     | To Do       |
-| <img src="Screenshots/SS #5.png" width="450"> | <img src="Screenshots/SS #6.png" width="450"> |
+| <img src="Screenshots/SS#5.png" width="450"> | <img src="Screenshots/SS#6.png" width="450"> |
 | Dashboard   |
-| <img src="Screenshots/SS #7.png" width="450"> |
+| <img src="Screenshots/SS#7.png" width="450"> |
 
 ## Contributors
 | <a href="https://github.com/sagarpatel211" target="_blank">**Sagar Patel**</a> |
