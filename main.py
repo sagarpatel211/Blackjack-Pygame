@@ -27,12 +27,12 @@ pygame.mouse.set_visible(False)                                                 
 pygame.display.set_icon(icon1)                                                                          #This makes the icon of the game                    #
 pygame.display.set_caption('BlackJack - Sagar')                                                         #Changes the name of game                           #
 clock = pygame.time.Clock()                                                                             #This sets the clock of the game for refresh-rate   #
-#buttonSound = pygame.mixer.Sound('Button.wav')                                                         #Imports sound for button                           #
-#winSound = pygame.mixer.Sound('Congrats.wav')                                                          #Imports sound for win screen                       #
-#loseSound = pygame.mixer.Sound('Loser.wav')                                                            #Imports sound for lose screen                      #
-#music = pygame.mixer.music.load ('BlackJack Music.mp3')                                                #Imports sound for background music                 #
-#pygame.mixer.music.set_volume(0.8)                                                                     #Sets volume for background sound                   #
-#pygame.mixer.music.play(loops=-1)                                                                      #loops background sound forever                     #
+buttonSound = pygame.mixer.Sound('Button.wav')                                                         #Imports sound for button                           #
+winSound = pygame.mixer.Sound('Congrats.wav')                                                          #Imports sound for win screen                       #
+loseSound = pygame.mixer.Sound('Loser.wav')                                                            #Imports sound for lose screen                      #
+music = pygame.mixer.music.load ('BlackJack Music.mp3')                                                #Imports sound for background music                 #
+pygame.mixer.music.set_volume(0.8)                                                                     #Sets volume for background sound                   #
+pygame.mixer.music.play(loops=-1)                                                                      #loops background sound forever                     #
 #--------------------------------- CARDS ---------------------------------------------------------------#---------------------------------------------------#
 cardAC = pygame.image.load('AC.png')                                                                    #imports image for game                             #
 cardAD = pygame.image.load('AD.png')                                                                    #imports image for game                             #
@@ -793,4 +793,3 @@ def premaingame ():                                                             
 #--------------------------------- MAIN GAME -----------------------------------------------------------#---------------------------------------------------#
 introduction()                                                                                          #This calls the function for the game               #
 #--------------------------------- END OF GAME ---------------------------------------------------------#---------------------------------------------------#
-
