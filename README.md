@@ -1,9 +1,12 @@
 # ICS3U1-Project
 This project was created as part of my final assignment in *Grade 11 Introduction to Computer Science*. The project was a graphical blackjack game using Pygame in Python 3.
 
-## Disclaimer:
+## Disclaimers:
 ```diff 
 - This is a naive implementation and terribly styled code (eg. global variables, not modularized, etc.) -
+```
+```diff 
+- To run this program, you must copy all files from the Images directory into the directory with main.py -
 ```
 
 ## Table of Contents
