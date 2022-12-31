@@ -3,9 +3,7 @@ The project is a graphical blackjack game using Pygame in Python 3.
 
 ## Disclaimers:
 ```diff 
-- This is a naive implementation and terribly styled code (eg. global variables, not modularized, etc.) -
-
-- To run this program, you must copy all files from the Images directory into the directory with main.py -
+- Naive implementation and terribly styled code (eg. global vars, undescriptive function names, etc.) -
 ```
 
 ## Table of Contents
