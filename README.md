@@ -25,7 +25,8 @@ The project is a graphical blackjack game using Pygame in Python 3.
 * Download the files
   * Option 1: 🍴 Fork this repository!
   * Option 2: 🧪 Clone the repository to your local machine using https://github.com/sagarpatel211/ICS3U1-Project.git!
-* Run main.py in Python 3.7.4 or in another code editor to run the program
+* Install all dependencies by entering the project directory and runnin `pip3 install -r requirements.txt`
+* Run `main.py` in Python (`python3 main.py`)
 
 ## Screenshots
 | MainPage    | TableScreen    | PauseScreen       | ResultsScreen   |
