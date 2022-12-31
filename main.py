@@ -5,7 +5,7 @@
 #--------------------------------- PACKAGES + SCREEN SPECIFIC + RECURSION LIMIT ------------------------#---------------------------------------------------#
 import pygame,os,sys,random,time                                                                        #imports needed packages                            #
 sys.setrecursionlimit(100000)                                                                           #Sets recursion limit so game doesn't crash         #
-os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (0,0)                                                    #Places pygame window in top left corner            #
+os.environ['SDL_VIDEO_WINDOW_POS'] = "%d,%d" % (10,20)                                                    #Places pygame window in top left corner            #
 pygame.init()                                                                                           #Required for all Pygame packages to be active      #
 #pygame.mixer.pre_init()                                                                                #Required for Pygame Music                          #
 #pygame.mixer.init()                                                                                    #Required for Pygame Music                          #
@@ -19,10 +19,10 @@ fontsize5 = pygame.font.Font('American Captain.ttf', 70)                        
 fontsize6 = pygame.font.Font('American Captain.ttf', 95)                                                #imports fonts and different sizes                  #
 fontsize200 = pygame.font.Font('American Captain.ttf', 30)                                              #imports fonts and different sizes                  #
 fontsize300 = pygame.font.Font('American Captain.ttf', 37)                                              #imports fonts and different sizes                  #
-icon1 = pygame.image.load('blackjackicon.png')                                                          #imports image for game                             #
-icon2 = pygame.image.load('cardmenusuits.png')                                                          #imports image for game                             #
-icon3 = pygame.image.load('mousecursor.png')                                                            #imports image for game                             #
-icon4 = pygame.image.load('dealerface.png')                                                             #image for dealer icon                              #
+icon1 = pygame.image.load('./Images/blackjackicon.png')                                                          #imports image for game                             #
+icon2 = pygame.image.load('./Images/cardmenusuits.png')                                                          #imports image for game                             #
+icon3 = pygame.image.load('./Images/mousecursor.png')                                                            #imports image for game                             #
+icon4 = pygame.image.load('./Images/dealerface.png')                                                             #image for dealer icon                              #
 pygame.mouse.set_visible(False)                                                                         #This hides the cursor so I can add my custom       #
 pygame.display.set_icon(icon1)                                                                          #This makes the icon of the game                    #
 pygame.display.set_caption('BlackJack - Sagar')                                                         #Changes the name of game                           #
@@ -34,59 +34,59 @@ music = pygame.mixer.music.load ('BlackJack Music.mp3')                         
 pygame.mixer.music.set_volume(0.8)                                                                     #Sets volume for background sound                   #
 pygame.mixer.music.play(loops=-1)                                                                      #loops background sound forever                     #
 #--------------------------------- CARDS ---------------------------------------------------------------#---------------------------------------------------#
-cardAC = pygame.image.load('AC.png')                                                                    #imports image for game                             #
-cardAD = pygame.image.load('AD.png')                                                                    #imports image for game                             #
-cardAH = pygame.image.load('AH.png')                                                                    #imports image for game                             #
-cardAS = pygame.image.load('AS.png')                                                                    #imports image for game                             #
-card2C = pygame.image.load('2C.png')                                                                    #imports image for game                             #
-card2D = pygame.image.load('2D.png')                                                                    #imports image for game                             #
-card2H = pygame.image.load('2H.png')                                                                    #imports image for game                             #
-card2S = pygame.image.load('2S.png')                                                                    #imports image for game                             #
-card3C = pygame.image.load('3C.png')                                                                    #imports image for game                             #
-card3D = pygame.image.load('3D.png')                                                                    #imports image for game                             #
-card3H = pygame.image.load('3H.png')                                                                    #imports image for game                             #
-card3S = pygame.image.load('3S.png')                                                                    #imports image for game                             #
-card4C = pygame.image.load('4C.png')                                                                    #imports image for game                             #
-card4D = pygame.image.load('4D.png')                                                                    #imports image for game                             #
-card4H = pygame.image.load('4H.png')                                                                    #imports image for game                             #
-card4S = pygame.image.load('4S.png')                                                                    #imports image for game                             #
-card5C = pygame.image.load('5C.png')                                                                    #imports image for game                             #
-card5D = pygame.image.load('5D.png')                                                                    #imports image for game                             #
-card5H = pygame.image.load('5H.png')                                                                    #imports image for game                             #
-card5S = pygame.image.load('5S.png')                                                                    #imports image for game                             #
-card6C = pygame.image.load('6C.png')                                                                    #imports image for game                             #
-card6D = pygame.image.load('6D.png')                                                                    #imports image for game                             #
-card6H = pygame.image.load('6H.png')                                                                    #imports image for game                             #
-card6S = pygame.image.load('6S.png')                                                                    #imports image for game                             #
-card7C = pygame.image.load('7C.png')                                                                    #imports image for game                             #
-card7D = pygame.image.load('7D.png')                                                                    #imports image for game                             #
-card7H = pygame.image.load('7H.png')                                                                    #imports image for game                             #
-card7S = pygame.image.load('7S.png')                                                                    #imports image for game                             #
-card8C = pygame.image.load('8C.png')                                                                    #imports image for game                             #
-card8D = pygame.image.load('8D.png')                                                                    #imports image for game                             #
-card8H = pygame.image.load('8H.png')                                                                    #imports image for game                             #
-card8S = pygame.image.load('8S.png')                                                                    #imports image for game                             #
-card9C = pygame.image.load('9C.png')                                                                    #imports image for game                             #
-card9D = pygame.image.load('9D.png')                                                                    #imports image for game                             #
-card9H = pygame.image.load('9H.png')                                                                    #imports image for game                             #
-card9S = pygame.image.load('9S.png')                                                                    #imports image for game                             #
-card10C = pygame.image.load('10C.png')                                                                  #imports image for game                             #
-card10D = pygame.image.load('10D.png')                                                                  #imports image for game                             #
-card10H = pygame.image.load('10H.png')                                                                  #imports image for game                             #
-card10S = pygame.image.load('10S.png')                                                                  #imports image for game                             #
-cardJC = pygame.image.load('JC.png')                                                                    #imports image for game                             #
-cardJD = pygame.image.load('JD.png')                                                                    #imports image for game                             #
-cardJH = pygame.image.load('JH.png')                                                                    #imports image for game                             #
-cardJS = pygame.image.load('JS.png')                                                                    #imports image for game                             #
-cardQC = pygame.image.load('QC.png')                                                                    #imports image for game                             #
-cardQD = pygame.image.load('QD.png')                                                                    #imports image for game                             #
-cardQH = pygame.image.load('QH.png')                                                                    #imports image for game                             #
-cardQS = pygame.image.load('QS.png')                                                                    #imports image for game                             #
-cardKC = pygame.image.load('KC.png')                                                                    #imports image for game                             #
-cardKD = pygame.image.load('KD.png')                                                                    #imports image for game                             #
-cardKH = pygame.image.load('KH.png')                                                                    #imports image for game                             #
-cardKS = pygame.image.load('KS.png')                                                                    #imports image for game                             #
-BACKSIDE = pygame.image.load('Back side Of Card.png')                                                   #imports image for game                             #
+cardAC = pygame.image.load('./Images/AC.png')                                                                    #imports image for game                             #
+cardAD = pygame.image.load('./Images/AD.png')                                                                    #imports image for game                             #
+cardAH = pygame.image.load('./Images/AH.png')                                                                    #imports image for game                             #
+cardAS = pygame.image.load('./Images/AS.png')                                                                    #imports image for game                             #
+card2C = pygame.image.load('./Images/2C.png')                                                                    #imports image for game                             #
+card2D = pygame.image.load('./Images/2D.png')                                                                    #imports image for game                             #
+card2H = pygame.image.load('./Images/2H.png')                                                                    #imports image for game                             #
+card2S = pygame.image.load('./Images/2S.png')                                                                    #imports image for game                             #
+card3C = pygame.image.load('./Images/3C.png')                                                                    #imports image for game                             #
+card3D = pygame.image.load('./Images/3D.png')                                                                    #imports image for game                             #
+card3H = pygame.image.load('./Images/3H.png')                                                                    #imports image for game                             #
+card3S = pygame.image.load('./Images/3S.png')                                                                    #imports image for game                             #
+card4C = pygame.image.load('./Images/4C.png')                                                                    #imports image for game                             #
+card4D = pygame.image.load('./Images/4D.png')                                                                    #imports image for game                             #
+card4H = pygame.image.load('./Images/4H.png')                                                                    #imports image for game                             #
+card4S = pygame.image.load('./Images/4S.png')                                                                    #imports image for game                             #
+card5C = pygame.image.load('./Images/5C.png')                                                                    #imports image for game                             #
+card5D = pygame.image.load('./Images/5D.png')                                                                    #imports image for game                             #
+card5H = pygame.image.load('./Images/5H.png')                                                                    #imports image for game                             #
+card5S = pygame.image.load('./Images/5S.png')                                                                    #imports image for game                             #
+card6C = pygame.image.load('./Images/6C.png')                                                                    #imports image for game                             #
+card6D = pygame.image.load('./Images/6D.png')                                                                    #imports image for game                             #
+card6H = pygame.image.load('./Images/6H.png')                                                                    #imports image for game                             #
+card6S = pygame.image.load('./Images/6S.png')                                                                    #imports image for game                             #
+card7C = pygame.image.load('./Images/7C.png')                                                                    #imports image for game                             #
+card7D = pygame.image.load('./Images/7D.png')                                                                    #imports image for game                             #
+card7H = pygame.image.load('./Images/7H.png')                                                                    #imports image for game                             #
+card7S = pygame.image.load('./Images/7S.png')                                                                    #imports image for game                             #
+card8C = pygame.image.load('./Images/8C.png')                                                                    #imports image for game                             #
+card8D = pygame.image.load('./Images/8D.png')                                                                    #imports image for game                             #
+card8H = pygame.image.load('./Images/8H.png')                                                                    #imports image for game                             #
+card8S = pygame.image.load('./Images/8S.png')                                                                    #imports image for game                             #
+card9C = pygame.image.load('./Images/9C.png')                                                                    #imports image for game                             #
+card9D = pygame.image.load('./Images/9D.png')                                                                    #imports image for game                             #
+card9H = pygame.image.load('./Images/9H.png')                                                                    #imports image for game                             #
+card9S = pygame.image.load('./Images/9S.png')                                                                    #imports image for game                             #
+card10C = pygame.image.load('./Images/10C.png')                                                                  #imports image for game                             #
+card10D = pygame.image.load('./Images/10D.png')                                                                  #imports image for game                             #
+card10H = pygame.image.load('./Images/10H.png')                                                                  #imports image for game                             #
+card10S = pygame.image.load('./Images/10S.png')                                                                  #imports image for game                             #
+cardJC = pygame.image.load('./Images/JC.png')                                                                    #imports image for game                             #
+cardJD = pygame.image.load('./Images/JD.png')                                                                    #imports image for game                             #
+cardJH = pygame.image.load('./Images/JH.png')                                                                    #imports image for game                             #
+cardJS = pygame.image.load('./Images/JS.png')                                                                    #imports image for game                             #
+cardQC = pygame.image.load('./Images/QC.png')                                                                    #imports image for game                             #
+cardQD = pygame.image.load('./Images/QD.png')                                                                    #imports image for game                             #
+cardQH = pygame.image.load('./Images/QH.png')                                                                    #imports image for game                             #
+cardQS = pygame.image.load('./Images/QS.png')                                                                    #imports image for game                             #
+cardKC = pygame.image.load('./Images/KC.png')                                                                    #imports image for game                             #
+cardKD = pygame.image.load('./Images/KD.png')                                                                    #imports image for game                             #
+cardKH = pygame.image.load('./Images/KH.png')                                                                    #imports image for game                             #
+cardKS = pygame.image.load('./Images/KS.png')                                                                    #imports image for game                             #
+BACKSIDE = pygame.image.load('./Images/Back side Of Card.png')                                                   #imports image for game                             #
 #--------------------------------- FUNCTIONS -----------------------------------------------------------#---------------------------------------------------#
 def quitgame ():                                                                                        #This is the quit game function                     #
     pygame.quit ()                                                                                      #Properly quits pygame                              #
